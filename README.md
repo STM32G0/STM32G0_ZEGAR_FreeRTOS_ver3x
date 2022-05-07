@@ -1,0 +1,2 @@
+# STM32G0_ZEGAR_FreeRTOS_ver3x
+ ZEGAR ver 3
