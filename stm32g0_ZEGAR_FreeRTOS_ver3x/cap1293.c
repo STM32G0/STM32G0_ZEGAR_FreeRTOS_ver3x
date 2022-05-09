@@ -35,7 +35,8 @@ uint8_t i2c_cap1293_rd(uint8_t registerAdress) { // read a data byte from the I2
 void i2c_cap1293_ini(void) { // initialization of the I2C RTCC:
 
   i2c_cap1293_wr(CAP1293_INTENABLE, 0b00000111); //Enable interrupt on CS1,CS2,CS3
-  i2c_cap1293_wr(CAP1293_CONFIG2, 0b01000101); //Przerwanie jest generowane po wykryciu naciœniêcia i z czêstotliwoœci¹ powtarzania, ale nie po wykryciu zwolnienia
+  i2c_cap1293_wr(CAP1293_CONFIG2, 0b01000101); //Przerwanie jest generowane po wykryciu nacinicia i z czstotliwoci powtarzania, ale nie po wykryciu zwolnienia
   i2c_cap1293_wr(CAP1293_SENSITIVITY, 0b00101111); //Sensitive 32x
+  i2c_cap1293_wr(CAP1293_RPTRATEENABLE, 0b00000011); //Repeat CS3-OFF , CS2-ON, CS1-ON
   i2c_cap1293_wr(CAP1293_MAIN, (i2c_cap1293_rd(CAP1293_MAIN) & ~CAP1293_MAIN_INT)); // clear main interrupt
 }
