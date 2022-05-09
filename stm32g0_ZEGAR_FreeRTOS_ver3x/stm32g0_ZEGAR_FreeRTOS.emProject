@@ -1,6 +1,6 @@
 <!DOCTYPE CrossStudio_Project_File>
-<solution Name="stm32g0_ZEGAR_FreeRTOS" target="8" version="2">
-  <project Name="stm32g0_ZEGAR_FreeRTOS">
+<solution Name="stm32g0_ZEGAR_FreeRTOS_rev3x" target="8" version="2">
+  <project Name="stm32g0_ZEGAR_FreeRTOS_rev3x">
     <configuration
       LIBRARY_IO_TYPE="RTT"
       Name="Common"

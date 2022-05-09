@@ -3,6 +3,7 @@ File  : main.c
 Autor : strefapic.blogspot.com
 MCU   : STM32G071KBT6
 IDE   : SEGGER Embedded Studio
+REV   : 3.x
 ******************************************/
 #include <stdio.h>
 #include <stdlib.h>
@@ -28,7 +29,6 @@ IDE   : SEGGER Embedded Studio
 
 static void prvSetupHardware(void);
 // uint8_t kropka_int_flag = 0 ;
-/* Machine State for DS18B20 */
 
 
 int main(void) {

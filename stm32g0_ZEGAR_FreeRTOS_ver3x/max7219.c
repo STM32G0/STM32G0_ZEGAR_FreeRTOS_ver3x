@@ -116,8 +116,8 @@ void max7219_display_Temperature(temperatureDevice_t TemperatureDevice){
     cyfra_dziesiatki = (uint16_t)(TemperatureDevice.DStemp_Calkowita / 10) % 10; // calculation of the decimal digit
     cyfra_jednosci = ((uint16_t)(TemperatureDevice.DStemp_Calkowita)) % 10;      // calculation of the unity digit
     if (TemperatureDevice.deviceID == Wire1) {
-      max7219.SendToDevice(Device0, MAX7219_DIGIT4, cyfra_dziesiatki);
-      max7219.SendToDevice(Device0, MAX7219_DIGIT5, cyfra_jednosci | kropka); // display a number and a dot
+      max7219.SendToDevice(Device0, MAX7219_DIGIT3, cyfra_dziesiatki);
+      max7219.SendToDevice(Device0, MAX7219_DIGIT4, cyfra_jednosci | kropka); // display a number and a dot
     }
     if (TemperatureDevice.deviceID == Wire2) {
       max7219.SendToDevice(Device1, MAX7219_DIGIT0, cyfra_dziesiatki);
@@ -130,8 +130,8 @@ void max7219_display_Temperature(temperatureDevice_t TemperatureDevice){
     cyfra_jednosci = ((uint16_t)TemperatureDevice.DStemp_Calkowita) % 10; // wyliczenie cyfry jednosci
     /* Wire1 */
     if (TemperatureDevice.deviceID == Wire1) {
-      max7219.SendToDevice(Device0, MAX7219_DIGIT5, cyfra_jednosci | kropka); // display the digit for the unity value and a dot
-      max7219.SendToDevice(Device0, MAX7219_DIGIT4, 0xF);                     // Turn off the display in the decimal position
+      max7219.SendToDevice(Device0, MAX7219_DIGIT4, cyfra_jednosci | kropka); // display the digit for the unity value and a dot
+      max7219.SendToDevice(Device0, MAX7219_DIGIT3, 0xF);                     // Turn off the display in the decimal position
     }
     /* Wire2 */
     if (TemperatureDevice.deviceID == Wire2) {
@@ -143,7 +143,7 @@ void max7219_display_Temperature(temperatureDevice_t TemperatureDevice){
   /* Temperature display after decimal point (one digit) */
   /* Wire1 */
   if (TemperatureDevice.deviceID == Wire1) {
-    max7219.SendToDevice(Device0, MAX7219_DIGIT6, TemperatureDevice.DStemp_Ulamek);
+    max7219.SendToDevice(Device0, MAX7219_DIGIT5, TemperatureDevice.DStemp_Ulamek);
   }
   /* Wire2 */
   if (TemperatureDevice.deviceID == Wire2) {

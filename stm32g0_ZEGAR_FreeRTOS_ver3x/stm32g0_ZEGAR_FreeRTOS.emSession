@@ -27,14 +27,15 @@
   <MemoryWindow addressSpace="" dataSize="1" autoEvaluate="0" viewMode="0" viewType="4" addressOrder="0" columnsText="" refreshPeriod="0" name="stm32g0_ZEGAR_FreeRTOS" sizeText="" addressText=""/>
  </Memory4>
  <Project>
-  <ProjectSessionItem path="stm32g0_ZEGAR_FreeRTOS"/>
-  <ProjectSessionItem path="stm32g0_ZEGAR_FreeRTOS;stm32g0_ZEGAR_FreeRTOS"/>
-  <ProjectSessionItem path="stm32g0_ZEGAR_FreeRTOS;stm32g0_ZEGAR_FreeRTOS;Header Files"/>
-  <ProjectSessionItem path="stm32g0_ZEGAR_FreeRTOS;stm32g0_ZEGAR_FreeRTOS;Header Files;Interface"/>
-  <ProjectSessionItem path="stm32g0_ZEGAR_FreeRTOS;stm32g0_ZEGAR_FreeRTOS;Source Files"/>
-  <ProjectSessionItem path="stm32g0_ZEGAR_FreeRTOS;stm32g0_ZEGAR_FreeRTOS;Source Files;Interface"/>
-  <ProjectSessionItem path="stm32g0_ZEGAR_FreeRTOS;stm32g0_ZEGAR_FreeRTOS;Source Files;MCU peripheral config"/>
-  <ProjectSessionItem path="stm32g0_ZEGAR_FreeRTOS;stm32g0_ZEGAR_FreeRTOS;System Files"/>
+  <ProjectSessionItem path="stm32g0_ZEGAR_FreeRTOS_rev3x"/>
+  <ProjectSessionItem path="stm32g0_ZEGAR_FreeRTOS_rev3x;stm32g0_ZEGAR_FreeRTOS_rev3x"/>
+  <ProjectSessionItem path="stm32g0_ZEGAR_FreeRTOS_rev3x;stm32g0_ZEGAR_FreeRTOS_rev3x;Header Files"/>
+  <ProjectSessionItem path="stm32g0_ZEGAR_FreeRTOS_rev3x;stm32g0_ZEGAR_FreeRTOS_rev3x;Header Files;Interface"/>
+  <ProjectSessionItem path="stm32g0_ZEGAR_FreeRTOS_rev3x;stm32g0_ZEGAR_FreeRTOS_rev3x;Header Files;MCU peripheral config"/>
+  <ProjectSessionItem path="stm32g0_ZEGAR_FreeRTOS_rev3x;stm32g0_ZEGAR_FreeRTOS_rev3x;Source Files"/>
+  <ProjectSessionItem path="stm32g0_ZEGAR_FreeRTOS_rev3x;stm32g0_ZEGAR_FreeRTOS_rev3x;Source Files;Interface"/>
+  <ProjectSessionItem path="stm32g0_ZEGAR_FreeRTOS_rev3x;stm32g0_ZEGAR_FreeRTOS_rev3x;Source Files;MCU peripheral config"/>
+  <ProjectSessionItem path="stm32g0_ZEGAR_FreeRTOS_rev3x;stm32g0_ZEGAR_FreeRTOS_rev3x;System Files"/>
  </Project>
  <Register1>
   <RegisterWindow visibleNodes="CPU - Current Context/r0;CPU - Current Context/r1;CPU - Current Context/r2;CPU - Current Context/r3;CPU - Current Context/r4;CPU - Current Context/r5;CPU - Current Context/r6;CPU - Current Context/r7;CPU - Current Context/r8;CPU - Current Context/r9;CPU - Current Context/r10;CPU - Current Context/r11;CPU - Current Context/r12;CPU - Current Context/sp(r13);CPU - Current Context/lr(r14);CPU - Current Context/pc(r15);CPU - Current Context/apsr;CPU/r0;CPU/r1;CPU/r2;CPU/r3;CPU/r4;CPU/r5;CPU/r6;CPU/r7;CPU/r8;CPU/r9;CPU/r10;CPU/r11;CPU/r12;CPU/sp(r13);CPU/lr(r14);CPU/pc(r15);CPU/xpsr;CPU/msp;CPU/psp;CPU/cfbp;CPU/internal;GPIOB/MODER;GPIOB/OTYPER;GPIOB/OSPEEDR;GPIOB/PUPDR;GPIOB/IDR;GPIOB/ODR;GPIOB/BSRR;GPIOB/LCKR;GPIOB/AFRL;GPIOB/AFRH;GPIOB/BRR;EXTI/RTSR1;EXTI/FTSR1;EXTI/SWIER1;EXTI/RPR1;EXTI/FPR1;EXTI/EXTICR1;EXTI/EXTICR2;EXTI/EXTICR3;EXTI/EXTICR4;EXTI/IMR1;EXTI/EMR1;EXTI/IMR2;EXTI/EMR2;EXTI/HWCFGR7;EXTI/HWCFGR6;EXTI/HWCFGR5;EXTI/HWCFGR4;EXTI/HWCFGR3;EXTI/HWCFGR2;EXTI/HWCFGR1;EXTI/VERR;EXTI/IPIDR;EXTI/SIDR" binaryNodes="" asciiNodes="" openNodes="GPIOB;EXTI;EXTI/RTSR1;EXTI/EXTICR1;EXTI/EXTICR2" name="stm32g0_CAP1296" decimalNodes="" octalNodes="" unsignedNodes=""/>
@@ -75,11 +76,8 @@
   <Watches active="0" update="Never"/>
  </Watch4>
  <Files>
-  <SessionOpenFile windowGroup="DockEditLeft" x="22" y="280" useTextEdit="1" path="main.c" left="0" top="265" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="22" y="73" useTextEdit="1" path="max7219.c" left="0" top="45" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="15" y="36" useTextEdit="1" path="max7219.h" left="0" selected="1" top="19" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" path="adc_config.h" left="0" top="0" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="17" y="80" useTextEdit="1" path="ds18b20.c" left="0" top="80" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="31" useTextEdit="1" path="main.c" left="0" top="87" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="3" y="140" useTextEdit="1" path="max7219.c" left="0" selected="1" top="117" codecName="Default"/>
  </Files>
  <EMStudioWindow activeProject="stm32g0_ZEGAR_FreeRTOS" fileDialogDefaultFilter="*.h" autoConnectTarget="J-Link" buildConfiguration="Debug" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="C:/Users/wojte/Documents/SEGGER Embedded Studio for ARM Projects/GitHub/STM32G0_Project/STM32G0_ZEGAR_FreeRTOS/stm32g0_ZEGAR_FreeRTOS" debugSearchPath="" autoConnectCapabilities="3199"/>
 </session>

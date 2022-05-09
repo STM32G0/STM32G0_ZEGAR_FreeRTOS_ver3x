@@ -102,19 +102,19 @@ EXTI->FTSR1 |= EXTI_FTSR1_FT4 ;
 /*set EXTI Interrupt no-masked for PB4*/
 EXTI->IMR1 |= EXTI_IMR1_IM4 ;
 
-/********** PC6 set Out for DS18B20 WIRE2 **********************/
-GPIOC->MODER |=  GPIO_MODER_MODE6_0; //MODE6 -> 0b01
-GPIOC->MODER &= ~GPIO_MODER_MODE6_1; //MODE6 -> 0b01
+/********** PA5 set Out for DS18B20 WIRE2 **********************/
+GPIOA->MODER |=  GPIO_MODER_MODE5_0; //MODE5 -> 0b01
+GPIOA->MODER &= ~GPIO_MODER_MODE5_1; //MODE5 -> 0b01
 
-/* PC6 set High */
-GPIOC->BSRR |= GPIO_BSRR_BS6;
+/* PA5 set High */
+GPIOA->BSRR |= GPIO_BSRR_BS5;
 
-/********** PA10 set Out for DS18B20 WIRE1 **********************/
-GPIOA->MODER |=  GPIO_MODER_MODE10_0; //MODE6 -> 0b01
-GPIOA->MODER &= ~GPIO_MODER_MODE10_1; //MODE6 -> 0b01
+/********** PA0 set Out for DS18B20 WIRE1 **********************/
+GPIOA->MODER |=  GPIO_MODER_MODE0_0; //MODE0 -> 0b01
+GPIOA->MODER &= ~GPIO_MODER_MODE0_1; //MODE0 -> 0b01
 
-/* PA10 set High */
-GPIOA->BSRR |= GPIO_BSRR_BS10;
+/* PA0 set High */
+GPIOA->BSRR |= GPIO_BSRR_BS0;
 
 /********* PA7 config for OptoResistor *********/
 GPIOA->MODER |=  ((GPIO_MODER_MODE7_0) | (GPIO_MODER_MODE7_1)); //MODE7 -> 0b11
