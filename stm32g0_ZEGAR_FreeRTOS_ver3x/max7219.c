@@ -40,15 +40,15 @@ void max7219_SendToDevice(uint8_t DeviceNumber, uint8_t Adress, uint8_t Data) {
 
 // inicjalizacja ukladu MAX7219
 void max7219_init(void) {
-  /* Device 1*/
-  max7219_SendToDevice(Device0, MAX7219_SCAN_LIMIT, (MAX7219_USE_DIGIT - 1)); // liczba obslugiwanych wyswietlaczy
-  max7219_SendToDevice(Device0, MAX7219_INTENSITY, 15);                       // maksymalna jasnosc od zera 0 - 15
+  /* Device 0*/
+  max7219_SendToDevice(Device0, MAX7219_SCAN_LIMIT, (MAX7219_USE_DIGIT - 4)); // liczba obslugiwanych wyswietlaczy
+  max7219_SendToDevice(Device0, MAX7219_INTENSITY, 11);                       // maksymalna jasnosc od zera 0 - 15
   max7219_SendToDevice(Device0, MAX7219_DECODE_MODE, MAX7219_USE_BCD_DECODE); // ustawienie trybu wyswietlania dla poszczeglnych wyswietlaczy - BCD
   max7219_SendToDevice(Device0, MAX7219_SHUTDOWN, MAX7219_NORMAL_OPPERATION); // wlaczenie ukladu (normal operation)
   max7219_SendToDevice(Device0, MAX7219_DISPLAY_TEST, 0);                     // Test OFF
   /* Device 1*/
-  max7219_SendToDevice(Device1, MAX7219_SCAN_LIMIT, (MAX7219_USE_DIGIT - 1)); // liczba obslugiwanych wyswietlaczy
-  max7219_SendToDevice(Device1, MAX7219_INTENSITY, 15);                       // maksymalna jasnosc od zera 0 - 15
+  max7219_SendToDevice(Device1, MAX7219_SCAN_LIMIT, (MAX7219_USE_DIGIT - 2)); // liczba obslugiwanych wyswietlaczy
+  max7219_SendToDevice(Device1, MAX7219_INTENSITY, 11);                       // maksymalna jasnosc od zera 0 - 15
   max7219_SendToDevice(Device1, MAX7219_DECODE_MODE, MAX7219_USE_BCD_DECODE); // ustawienie trybu wyswietlania dla poszczeglnych wyswietlaczy - BCD
   max7219_SendToDevice(Device1, MAX7219_SHUTDOWN, MAX7219_NORMAL_OPPERATION); // wlaczenie ukladu (normal operation)
   max7219_SendToDevice(Device1, MAX7219_DISPLAY_TEST, 0);                     // Test OFF
@@ -116,11 +116,11 @@ void max7219_display_Temperature(temperatureDevice_t TemperatureDevice){
     cyfra_dziesiatki = (uint16_t)(TemperatureDevice.DStemp_Calkowita / 10) % 10; // calculation of the decimal digit
     cyfra_jednosci = ((uint16_t)(TemperatureDevice.DStemp_Calkowita)) % 10;      // calculation of the unity digit
     if (TemperatureDevice.deviceID == Wire1) {
-      max7219.SendToDevice(Device0, MAX7219_DIGIT3, cyfra_dziesiatki);
-      max7219.SendToDevice(Device0, MAX7219_DIGIT4, cyfra_jednosci | kropka); // display a number and a dot
+      max7219.SendToDevice(Device1, MAX7219_DIGIT5, cyfra_dziesiatki);
+      max7219.SendToDevice(Device1, MAX7219_DIGIT4, cyfra_jednosci | kropka); // display a number and a dot
     }
     if (TemperatureDevice.deviceID == Wire2) {
-      max7219.SendToDevice(Device1, MAX7219_DIGIT0, cyfra_dziesiatki);
+      max7219.SendToDevice(Device1, MAX7219_DIGIT2, cyfra_dziesiatki);
       max7219.SendToDevice(Device1, MAX7219_DIGIT1, cyfra_jednosci | kropka); // display a number and a dot
     }
   }
@@ -130,23 +130,23 @@ void max7219_display_Temperature(temperatureDevice_t TemperatureDevice){
     cyfra_jednosci = ((uint16_t)TemperatureDevice.DStemp_Calkowita) % 10; // wyliczenie cyfry jednosci
     /* Wire1 */
     if (TemperatureDevice.deviceID == Wire1) {
-      max7219.SendToDevice(Device0, MAX7219_DIGIT4, cyfra_jednosci | kropka); // display the digit for the unity value and a dot
-      max7219.SendToDevice(Device0, MAX7219_DIGIT3, 0xF);                     // Turn off the display in the decimal position
+      max7219.SendToDevice(Device1, MAX7219_DIGIT4, cyfra_jednosci | kropka); // display the digit for the unity value and a dot
+      max7219.SendToDevice(Device1, MAX7219_DIGIT3, 0xF);                     // Turn off the display in the decimal position
     }
     /* Wire2 */
     if (TemperatureDevice.deviceID == Wire2) {
       max7219.SendToDevice(Device1, MAX7219_DIGIT1, cyfra_jednosci | kropka); // display the digit for the unity value and a dot
-      max7219.SendToDevice(Device1, MAX7219_DIGIT0, 0xF);                     // Turn off the display in the decimal position
+      max7219.SendToDevice(Device1, MAX7219_DIGIT2, 0xF);                     // Turn off the display in the decimal position
     }
   }
 
   /* Temperature display after decimal point (one digit) */
   /* Wire1 */
   if (TemperatureDevice.deviceID == Wire1) {
-    max7219.SendToDevice(Device0, MAX7219_DIGIT5, TemperatureDevice.DStemp_Ulamek);
+    max7219.SendToDevice(Device1, MAX7219_DIGIT3, TemperatureDevice.DStemp_Ulamek);
   }
   /* Wire2 */
   if (TemperatureDevice.deviceID == Wire2) {
-    max7219.SendToDevice(Device1, MAX7219_DIGIT2, TemperatureDevice.DStemp_Ulamek);
+    max7219.SendToDevice(Device1, MAX7219_DIGIT0, TemperatureDevice.DStemp_Ulamek);
   }
 }

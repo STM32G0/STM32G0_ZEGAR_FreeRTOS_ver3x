@@ -21,7 +21,7 @@ IDE   : SEGGER Embedded Studio
  temperatureDevice_t WireDevice1 = {
 .deviceID = Wire1,
 .GPIOx = GPIOA,
-.GPIO_Pin_x = 10,
+.GPIO_Pin_x = 0,
 .DStemp_Znak = false,
 .DStemp_Calkowita = 0,
 .DStemp_Ulamek = 0,
@@ -29,8 +29,8 @@ IDE   : SEGGER Embedded Studio
 
  temperatureDevice_t WireDevice2 = {
 .deviceID = Wire2,
-.GPIOx = GPIOC,
-.GPIO_Pin_x = 6, 
+.GPIOx = GPIOA,
+.GPIO_Pin_x = 5, 
 .DStemp_Znak = false,
 .DStemp_Calkowita = 0,
 .DStemp_Ulamek = 0,
