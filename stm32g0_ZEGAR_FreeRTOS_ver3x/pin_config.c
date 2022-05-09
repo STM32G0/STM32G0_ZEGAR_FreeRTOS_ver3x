@@ -119,5 +119,7 @@ GPIOA->BSRR |= GPIO_BSRR_BS0;
 /********* PA7 config for OptoResistor *********/
 GPIOA->MODER |=  ((GPIO_MODER_MODE7_0) | (GPIO_MODER_MODE7_1)); //MODE7 -> 0b11
 
+/********* PB3 config for Buzzer *********/
+// see pin_config.h
 }
 
