@@ -318,7 +318,7 @@ vTaskDelay(1500 / portTICK_RATE_MS); // zadanie budzone co 1,5 sekundy.
 
 /*signal on PB5 pin generate IRQ*/
 void EXTI4_15_IRQHandler(void) {
-    
+   
   /* Inerrupt from MCP79410 MFP - PB5 ? */
 
   if (EXTI->FPR1 & EXTI_FPR1_FPIF5) {

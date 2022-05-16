@@ -23,9 +23,9 @@ void PIN_MANAGER_Initialize(void);
 #define CS_SetHigh()            (GPIOA->BSRR |= GPIO_BSRR_BS3) 
 #define CS_SetLow()             (GPIOA->BSRR |= GPIO_BSRR_BR3) 
 
-#define BUZZER_ON()             (GPIOB->MODER &= ~GPIO_MODER_MODE3_1)
-#define BUZZER_OFF()            (GPIOB->MODER |=  GPIO_MODER_MODE3_1)
-#define BUZZER_Toggle()         ((GPIOB->MODER & GPIO_MODER_MODE3_1)  ? (GPIOB->MODER &= ~GPIO_MODER_MODE3_1) : (GPIOB->MODER |=  GPIO_MODER_MODE3_1))
+#define BUZZER_ON()             (GPIOB->BSRR |= GPIO_BSRR_BS3)
+#define BUZZER_OFF()            (GPIOB->BSRR |= GPIO_BSRR_BR3)
+#define BUZZER_Toggle()         ((GPIOB->ODR & GPIO_ODR_OD3)  ? (GPIOB->BSRR |= GPIO_BSRR_BR3) : (GPIOB->BSRR |= GPIO_BSRR_BS3))
 
 
 

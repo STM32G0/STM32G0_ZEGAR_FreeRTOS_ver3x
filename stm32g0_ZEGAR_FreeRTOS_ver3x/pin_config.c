@@ -120,6 +120,10 @@ GPIOA->BSRR |= GPIO_BSRR_BS0;
 GPIOA->MODER |=  ((GPIO_MODER_MODE7_0) | (GPIO_MODER_MODE7_1)); //MODE7 -> 0b11
 
 /********* PB3 config for Buzzer *********/
-// see pin_config.h
+GPIOB->OTYPER |= GPIO_OTYPER_OT3 ;   // Open Drain 
+GPIOB->MODER |=  GPIO_MODER_MODE3_0; //MODE3 -> 0b01
+GPIOB->MODER &= ~GPIO_MODER_MODE3_1; //MODE3 -> 0b01
+/* PB3 set High */
+GPIOB->BSRR |= GPIO_BSRR_BS3 ;
 }
 

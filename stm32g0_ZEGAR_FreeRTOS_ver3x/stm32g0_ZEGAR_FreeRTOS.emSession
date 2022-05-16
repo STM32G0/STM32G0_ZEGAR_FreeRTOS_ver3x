@@ -74,9 +74,11 @@
   <Watches active="0" update="Never"/>
  </Watch4>
  <Files>
-  <SessionOpenFile windowGroup="DockEditLeft" x="4" y="325" useTextEdit="1" path="main.c" left="0" top="311" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="19" y="122" useTextEdit="1" path="pin_config.c" left="0" selected="1" top="99" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="23" y="27" useTextEdit="1" path="pin_config.h" left="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="4" y="325" useTextEdit="1" path="main.c" left="0" selected="1" top="284" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="27" y="126" useTextEdit="1" path="pin_config.c" left="0" top="87" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="125" y="27" useTextEdit="1" path="pin_config.h" left="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="39" y="3126" useTextEdit="1" path="STM32G0xx/CMSIS/Device/Include/stm32g071xx.h" left="0" top="3089" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="15" y="37" useTextEdit="1" path="max7219.h" left="0" top="12" codecName="Default"/>
  </Files>
  <EMStudioWindow activeProject="stm32g0_ZEGAR_FreeRTOS_rev3x" fileDialogDefaultFilter="*.h" autoConnectTarget="J-Link" buildConfiguration="Debug" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="C:/Users/wojte/Documents/SEGGER Embedded Studio for ARM Projects/GitHub/STM32G0_Project/STM32G0_ZEGAR_FreeRTOS/stm32g0_ZEGAR_FreeRTOS" debugSearchPath="" autoConnectCapabilities="3199"/>
 </session>
