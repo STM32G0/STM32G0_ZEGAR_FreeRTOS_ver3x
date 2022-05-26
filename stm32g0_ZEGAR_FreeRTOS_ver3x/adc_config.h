@@ -6,7 +6,7 @@ IDE   : SEGGER Embedded Studio
 ******************************************/
 
 #ifndef ADC_CONFIG_H
-#define  ADC_CONFIG_H
+#define ADC_CONFIG_H
 
 void ADC_MANAGER_Initialize(void);
 
