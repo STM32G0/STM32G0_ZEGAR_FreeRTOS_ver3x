@@ -28,7 +28,7 @@ IDE   : SEGGER Embedded Studio
 #define MAX7219_DIGIT5			0x06
 #define MAX7219_DIGIT6			0x07
 #define MAX7219_DIGIT7			0x08
-#define MAX7219_DECODE_MODE		0x09 	// bity 0..7 opisuj sposb dekodowania danych z rejestrw DIGIT0..7 (0 - standard dla 7-seg, 1 - BCD)
+#define MAX7219_DECODE_MODE		0x09 	// bity 0..7 opisuj sposb dekodowania danych z rejestru w DIGIT0..7 (0 - standard dla 7-seg, 1 - BCD)
 #define MAX7219_INTENSITY		0x0A	// regulacja intensywnoci swiecenia wyswietlaczy 1,3,5,7,9,11,13,15,17,19,21,23,25,27,29,31
 #define MAX7219_SCAN_LIMIT		0x0B	// okrelenie liczby sterowanych ukladem wyswietlaczy (bity 0..2) - 0x00 - tylko 1 wys., 0x07 - wszystkie 8 wysw.
 #define MAX7219_SHUTDOWN		0x0C	// tryb pracy wyswietlacza (0 - shutdown, 1 - normal)
