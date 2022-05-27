@@ -293,7 +293,7 @@ idx++ ;
 if (idx == okres) {
 
 	srednia = suma / okres ; // zmienna przechowuje usredniony pomiar
-	if (srednia > 301 )
+	if (srednia > 601 )
 			{  max7219.Set_Intensity(Device0, night) ;	
                            max7219.Set_Intensity(Device1, night) ;
 			}
