@@ -73,7 +73,7 @@
   <Watches active="0" update="Never"/>
  </Watch4>
  <Files>
-  <SessionOpenFile windowGroup="DockEditLeft" x="4" y="298" useTextEdit="1" path="main.c" left="0" selected="1" top="275" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="16" y="295" useTextEdit="1" path="main.c" left="0" selected="1" top="275" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="27" y="126" useTextEdit="1" path="pin_config.c" left="0" top="86" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="125" y="27" useTextEdit="1" path="pin_config.h" left="0" top="0" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="39" y="3126" useTextEdit="1" path="STM32G0xx/CMSIS/Device/Include/stm32g071xx.h" left="0" top="3089" codecName="Default"/>
