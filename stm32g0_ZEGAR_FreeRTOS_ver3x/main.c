@@ -180,7 +180,7 @@ void vTouchTask(void *pvParameters) {
             minuty = 0;
           }
 
-          mcp79410.setTime_MIN(minuty); // ustaw minuty w MCP79410
+          mcp79410.setTime_MIN(minuty); //set the minutes in MCP79410
           // zeruj sekundy w MCP79410 , zaimplementuj
           max7219.Display_MIN(dec2bcd(minuty)); // display minutes
                    

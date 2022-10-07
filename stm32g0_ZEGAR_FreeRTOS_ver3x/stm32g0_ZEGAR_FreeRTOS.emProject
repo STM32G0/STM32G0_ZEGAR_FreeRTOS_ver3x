@@ -156,7 +156,10 @@
       <file file_name="ds18b20.h" />
       <file file_name="delay.h" />
     </folder>
-    <configuration Name="Debug" c_user_include_directories="." />
+    <configuration
+      Name="Debug"
+      arm_compiler_variant="gcc"
+      c_user_include_directories="." />
   </project>
   <configuration
     Name="Debug"

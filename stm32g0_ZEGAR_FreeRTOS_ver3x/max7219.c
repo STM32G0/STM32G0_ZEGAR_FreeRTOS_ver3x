@@ -149,4 +149,21 @@ void max7219_display_Temperature(temperatureDevice_t TemperatureDevice){
   if (TemperatureDevice.deviceID == Wire2) {
     max7219.SendToDevice(Device1, MAX7219_DIGIT0, TemperatureDevice.DStemp_Ulamek);
   }
+
+   /* Temperature sign signaling */
+  /* Wire1 */
+  if (TemperatureDevice.deviceID == Wire1) {
+  if(TemperatureDevice.DStemp_Znak){ //sign temperature minus ?
+     	  LED2_SetHigh(); // LED for Wire1 ON
+       } else
+     	  LED2_SetLow(); // LED for Wire1 OFF
+  }
+
+  /* Wire2 */
+    if (TemperatureDevice.deviceID == Wire2) {
+    if(TemperatureDevice.DStemp_Znak){ //sign temperature minus ?
+       	  LED1_SetHigh(); // LED for Wire2 ON
+         } else
+       	  LED1_SetLow(); // LED for Wire2 OFF
+    }
 }
