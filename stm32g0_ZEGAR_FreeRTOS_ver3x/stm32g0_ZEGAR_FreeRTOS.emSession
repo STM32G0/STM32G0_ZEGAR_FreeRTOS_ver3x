@@ -79,7 +79,7 @@
   <SessionOpenFile windowGroup="DockEditLeft" x="8" y="2364" useTextEdit="1" openedFrom="C:/Users/wojte/Documents/SEGGER Embedded Studio for ARM Projects/GitHub/STM32G0_Project/STM32G0_ZEGAR_FreeRTOS_ver3x/stm32g0_ZEGAR_FreeRTOS_ver3x/main.c" path="FreeRTOS/Source/include/task.h" left="0" top="2322" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" path="FreeRTOS/Source/tasks.c" left="0" top="0" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="7" y="26" useTextEdit="1" openedFrom="C:/Users/wojte/Documents/SEGGER Embedded Studio for ARM Projects/GitHub/STM32G0_Project/STM32G0_ZEGAR_FreeRTOS_ver3x/stm32g0_ZEGAR_FreeRTOS_ver3x/main.c" path="max7219_interface.h" left="0" top="0" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="5" y="167" useTextEdit="1" path="max7219.c" left="0" selected="1" top="123" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="5" y="167" useTextEdit="1" path="max7219.c" left="0" selected="1" top="125" codecName="Default"/>
  </Files>
  <EMStudioWindow activeProject="stm32g0_ZEGAR_FreeRTOS_rev3x" fileDialogDefaultFilter="*.h" autoConnectTarget="J-Link" buildConfiguration="Debug" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="C:/Users/wojte/Documents/SEGGER Embedded Studio for ARM Projects/GitHub/STM32G0_Project/STM32G0_ZEGAR_FreeRTOS/stm32g0_ZEGAR_FreeRTOS" debugSearchPath="" autoConnectCapabilities="3199"/>
 </session>
